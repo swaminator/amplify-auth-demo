@@ -9,6 +9,13 @@
             "UnauthRoleName": "amplifyauth-dev-20190618190000-unauthRole",
             "StackName": "amplifyauth-dev-20190618190000",
             "StackId": "arn:aws:cloudformation:us-west-2:033205456844:stack/amplifyauth-dev-20190618190000/f20beaa0-9235-11e9-9608-0627e8275120"
+        },
+        "categories": {
+            "auth": {
+                "amplifyauthaa306ffc": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"740525603032161\",\"client_secret\":\"0911d16518a8cee2a401c7ef331c8a03\"},{\"ProviderName\":\"Google\",\"client_id\":\"720330660051-tf1roudik5k68a3u1vnkgub9du7dva2l.apps.googleusercontent.com\",\"client_secret\":\"jPUcFRNJ_CI_973M-J-D0B8Z\"}]"
+                }
+            }
         }
     }
 }

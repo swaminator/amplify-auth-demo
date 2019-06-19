@@ -1,0 +1,76 @@
+{
+    "identityPoolName": "amplifyauthaa306ffc_identitypool_aa306ffc",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "amplif_aa306ffc_lambda_log_policy",
+    "openIdLambdaRoleName": "amplif_aa306ffc_openid_lambda_role",
+    "openIdRolePolicy": "amplif_aa306ffc_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "amplif_aa306ffc_openid_lambda_iam_policy",
+    "openIdLogPolicy": "amplif_aa306ffc_openid_lambda_log_policy",
+    "userPoolName": "amplifyauthaa306ffc_userpool_aa306ffc",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "amplifaa306ffc_sns-role",
+    "roleExternalId": "amplifaa306ffc_role_external_id",
+    "policyName": "amplifaa306ffc-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "amplifaa306ffc_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "amplifaa306ffc_totp_lambda_role",
+    "mfaLambdaLogPolicy": "amplifaa306ffc_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "amplifaa306ffc_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "amplifaa306ffc_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "amplifaa306ffc_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "amplifaa306ffc_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "amplifaa306ffc_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "amplifyauthaa306ffc",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
+    "hostedUIDomainName": "amplifyauthaa306ffc-aa306ffc",
+    "authProvidersUserPool": [
+        "Facebook",
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}"
+}
